@@ -5,9 +5,27 @@
     <title>Webプロ08 - HTML/CSS</title>
     <style>
       body {
+        margin: 0;
+        background-color: #000;
+        color: #fff;
         font-family: sans-serif;
-        text-align: center;
-        padding-top: 100px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      header {
+        text-align: left;
+        padding: 20px;
+        font-size: 24px;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 50px;
+        font-size: 20px;
       }
       .btn {
         display: inline-block;
@@ -18,14 +36,23 @@
         text-decoration: none;
         border-radius: 8px;
         transition: background-color 0.3s ease;
+        margin: 20px;
       }
       .btn:hover {
         background-color: #45a049;
       }
+      footer {
+        text-align: left;
+      }
     </style>
   </head>
   <body>
-    <h1>hello world</h1>
-    <a href="second.html" class="btn">次のページへ</a>
+    <header>ゲーム紹介</header>
+    <main>
+      <p>ゲーム紹介</p>
+    </main>
+    <footer>
+      <a href="second.html" class="btn">次のページへ</a>
+    </footer>
   </body>
 </html>
